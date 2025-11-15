@@ -57,11 +57,16 @@ class Record:
         self.phones.remove(Phone(phone_str))
 
     def __str__(self):
-        result_str = f"Contact name: {self.name.value}, phone(s): {', '.join(p.value for p in self.phones)}"
-        if self.emails:
-            result_str += f", email(s): {', '.join(e.value for e in self.emails)}"
-        if self.birthday:
-            result_str += f", birthday: {self.birthday}"
+        result_str = f"Contact name: {self.name.value}"
         if self.address:
             result_str += f", address: {self.address}"
+        if self.birthday:
+            result_str += f", birthday: {self.birthday}"
+        if self.phones:
+            result_str += f", phone(s): {', '.join(e.value for e in self.phones)}"
+        if self.emails:
+            result_str += f", email(s): {', '.join(e.value for e in self.emails)}"
+        if self.note:
+            result_str += f", note: {self.note}"
+
         return result_str

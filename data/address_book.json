@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "name": "John_Doe",
+      "phones": [
+        "1234567890"
+      ],
+      "emails": [
+        "john1@example.com",
+        "john2@example.com"
+      ],
+      "address": "123 Main St, City",
+      "birthday": "15.11.1990",
+      "note": "John is a very good person!"
+    },
+    {
+      "name": "Jane_Smith",
+      "phones": [
+        "0987654321",
+        "0987654322"
+      ],
+      "emails": [
+        "jane@example.com"
+      ],
+      "address": "125 Main St, City"
+    }
+  ]
+}
